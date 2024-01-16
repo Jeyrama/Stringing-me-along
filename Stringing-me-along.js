@@ -9,3 +9,6 @@ Note:
 For example:
   createMessage("Hello")("World!")("how")("are")("you?")() === "Hello World! how are you?"
 */
+
+
+// Solution
