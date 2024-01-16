@@ -21,3 +21,15 @@ function createMessage(str) {
 }
 
 // or
+
+function createMessage() {
+  let result = arguments[0];
+
+  function inner() {
+    if (arguments.length === 0) return result;
+    result += ' ' + arguments[0];
+    return inner;
+  }
+
+  return inner;
+}
